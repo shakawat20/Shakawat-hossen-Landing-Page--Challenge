@@ -5,6 +5,7 @@ import searchIcon from '../../images/magnifierIcon.png'
 import sunglassIcon from '../../images/sunglassIcon.png'
 import cardIcon from '../../images/card.png'
 import deliveryIcon from '../../images/vehicle.png'
+// import '../../App.css'
 
 const Home = () => {
     const object1 = [{
@@ -34,8 +35,8 @@ const Home = () => {
 
         <div>
 
-            <div style={{ width: "100%", height: "", backgroundColor: "#EAEAEA", display: "flex", justifyContent: "center" }}>
-                <div style={{ position: "absolute", left: "16%", top: "30%", zIndex: 10 }}>
+            <div class='hope' style={{ width: "100%", height: "", backgroundColor: "#EAEAEA", display: "flex", justifyContent: "center" }}>
+                <div style={{ position: "absolute", left: "14%", top: "30%", zIndex: 10 }}>
                     <h1 style={{
                         fontFamily: 'Jost, sans-serif',
                         fontSize: '54px',
@@ -49,13 +50,13 @@ const Home = () => {
                     </button>
                 </div>
                 <div style={{ width: "500px", height: '500px', backgroundColor: "#FED29C", borderRadius: "50%", position: "relative", left: "15%" }}>
-                    <img src={home} alt="Home Image" className="w-100 h-100 object-cover rounded-lg hover:shadow-xl transition-shadow duration-300" />
+                    <img src={home} alt="Home Image" style={{height:"100%"}} className="w-100  object-cover rounded-lg hover:shadow-xl transition-shadow duration-300" />
                 </div>
 
 
             </div>
-            <div style={{ width: "100%" }}>
-                <div style={{ position: "relative", top: "-90px", display: "flex", justifyContent: "space-between", width: "100%" }}>
+            <div  style={{ width: "100%" }}>
+                <div id='features' style={{ position: "relative", top: "-90px", display: "flex", justifyContent: "space-between", width: "100%" }}>
                     {
                         object1.map(object =>
                             <div className='flex flex-col justify-center items-center' style={{ width: "170px", height: "236px" }}>

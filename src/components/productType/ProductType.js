@@ -3,10 +3,10 @@ import bravoSunglass from '../../images/upperLeft.png';
 import tommyHilfiger from '../../images/upperRight.png';
 import johnJacob from '../../images/bottomLeft.png';
 import vincentChase from '../../images/bottomRight.png';
+import '../../App.css'
 
 const ProductType = () => {
     const innerCardTextStyle = {
-
         width: "100%",
         fontFamily: 'Jost',
         fontSize: '20px',
@@ -25,10 +25,6 @@ const ProductType = () => {
         textAlign: "center"
     };
 
-
-
-
-
     const innerCard = {
         display: "flex",
         flexDirection: "column",
@@ -36,14 +32,14 @@ const ProductType = () => {
         backgroundColor: "white",
         borderRadius: "5px",
         marginBottom: "20px",
-       justifyContent:"center",
-        width:"78%",
-        height:"35%"
+        justifyContent: "center",
+        width: "78%",
+        height: "35%"
 
     };
     return (
-        <div style={{ width: "100%", height: "1321px" }}>
-            <div style={{ display: "flex", justifyContent: "center" }}>
+        <div style={{ width: "100%" }} id="reviews" >
+            <div style={{ display: "flex", justifyContent: "center" }} className='responsive'>
                 <div style={{
                     backgroundImage: `url(${bravoSunglass})`,
                     display: "flex",
@@ -53,7 +49,7 @@ const ProductType = () => {
                     backgroundPosition: 'center',
                     width: '30%',
                     height: '450px', // adjust as necessary
-                   
+
                     margin: '10px',
                     borderRadius: "5px"
                 }}>
@@ -79,7 +75,7 @@ const ProductType = () => {
                     backgroundPosition: 'center',
                     width: '30%',
                     height: '350px', // adjust as necessary
-              
+
                     margin: '10px', // add margin to separate divs if needed
                     display: "flex",
                     justifyContent: "center",
@@ -100,20 +96,20 @@ const ProductType = () => {
 
                 </div>
             </div>
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={{ display: "flex", justifyContent: "center" }} class='responsive'>
                 <div style={{
                     backgroundImage: `url(${johnJacob})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    width: '30%',
-                    height: '296px', // adjust as necessary
-                 
-                    margin: '10px', // add margin to separate divs if needed
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "end",
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    width: '30%',
+                    height: '350px', // adjust as necessary
 
+                    margin: '10px',
                     borderRadius: "5px"
+
                 }
                 }>
                     <div style={innerCard}>
@@ -135,7 +131,7 @@ const ProductType = () => {
                     top: "-105px",
                     width: '30%',
                     height: '400px', // adjust as necessary
-                   
+
                     margin: '10px', // add margin to separate divs if needed
                     display: "flex",
                     justifyContent: "center",
@@ -146,7 +142,7 @@ const ProductType = () => {
 
                     <div style={innerCard}>
 
-                        <h1 style={innerCardTextStyle}>Bravo Sunglass</h1>
+                        <h1 style={innerCardTextStyle} className='hope'>Bravo Sunglassaa</h1>
                         <h1 style={innerCardTextStyleBottom}>Up to 80% of on selected Item</h1>
                         <button class="flex items-center bg-[#383838] text-white font-bold py-2 px-4 rounded hover:bg-[#383838] mt-1" style={{ width: "110px" }}>
 

@@ -1,38 +1,37 @@
 import React from 'react';
 import logo from '../../images/Logo.png'
-import { Link, animateScroll as scroll } from "react-router-dom";
+
+import profileLogo from '../../images/Profile icon.png'
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
 
 
     const nav = <>
-
         <li>
-            <a href="#">Home</a>
+            <Link to="home" spy={true} smooth={true} duration={500}>Home</Link>
         </li>
         <li>
-            <a href="#">About Us</a>
+            <Link to="about" spy={true} smooth={true} duration={500}>About Us</Link>
         </li>
         <li>
-            <a href="#">Products</a>
+            <Link to="products" spy={true} smooth={true} duration={500}>Products</Link>
         </li>
         <li>
-            <a href="#">Features</a>
+            <Link to="features" spy={true} smooth={true} duration={500}>Features</Link>
         </li>
         <li>
-            <a href="#">Reviews</a>
+            <Link to="reviews" spy={true} smooth={true} duration={500}>Reviews</Link>
         </li>
         <li>
-            <a href="#">Contact Us</a>
+            <Link to="contact" spy={true} smooth={true} duration={500}>Contact Us</Link>
         </li>
-
-
-    </>
+    </>;
 
 
     return (
         <div>
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-[#FFFFFF]-100">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -67,7 +66,7 @@ const Navbar = () => {
                             <span className="badge badge-sm indicator-item">8</span>
                         </div>
                     </div>
-                    <a className="btn">Button</a>
+                    <img src={profileLogo} alt="" />
                 </div>
             </div>
         </div>
