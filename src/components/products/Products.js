@@ -6,7 +6,7 @@ import img4 from '../../images/sunglass4.png';
 import img5 from '../../images/sunglass5.png';
 import img6 from '../../images/sunglass6.png';
 
-const Products = () => {
+const Products = ({ handleBadge }) => {
     const productsInfo = [
         {
             id: 1,
@@ -95,24 +95,23 @@ const Products = () => {
                                 textAlign: "left",
                                 color: "#383838"
                             }}>$ {product.price}</p>
-
-                            <button  style={{
+                            <button onClick={handleBadge} style={{
                                 fontFamily: "Jost",
                                 fontSize: "20px",
                                 fontWeight: 400,
                                 lineHeight: "28.9px",
                                 textAlign: "left"
                             }}>
-
-                                <span >Add To Cart</span>
+                                <span>Add To Cart</span>
                             </button>
-
                         </div>
-                    </div>)
-                }
-            </div>
 
+                    </div>
+                   )
+                }
         </div>
+
+        </div >
     );
 };
 

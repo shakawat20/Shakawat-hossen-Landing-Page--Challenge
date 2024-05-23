@@ -52,7 +52,8 @@ const ProductType = () => {
 
                     margin: '10px',
                     borderRadius: "5px"
-                }}>
+                }} 
+                >
                     <div style={innerCard}>
 
                         <h1 style={innerCardTextStyle}>Bravo Sunglass</h1>
@@ -105,7 +106,7 @@ const ProductType = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     width: '30%',
-                    height: '350px', // adjust as necessary
+                    height: '299px', // adjust as necessary
 
                     margin: '10px',
                     borderRadius: "5px"
@@ -113,9 +114,9 @@ const ProductType = () => {
                 }
                 }>
                     <div style={innerCard}>
-                        <h1 style={innerCardTextStyle}>Bravo Sunglass</h1>
+                        <h1 style={innerCardTextStyle}>Bravo Sunglassss</h1>
                         <h1 style={innerCardTextStyleBottom}>Up to 80% of on selected Item</h1>
-                        <button class="flex items-center bg-[#383838] text-white font-bold py-2 px-4 rounded hover:bg-[#383838] mt-1" style={{ width: "110px" }}>
+                        <button class="flex items-center bg-[#383838] text-white font-bold py-2 px-4 rounded hover:bg-[#383838] mb-3" style={{ width: "110px" }}>
 
                             <span class="ml-2">Buy Now</span>
                         </button>
