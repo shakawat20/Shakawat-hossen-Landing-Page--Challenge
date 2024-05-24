@@ -35,7 +35,7 @@ const Home = () => {
 
         <div>
 
-            <div class='hope' style={{ width: "100%", height: "", backgroundColor: "#EAEAEA", display: "flex", justifyContent: "center" }}>
+            <div class='hope ' style={{ width: "100%", height: "", backgroundColor: "#EAEAEA", display: "flex", justifyContent: "center" }}>
                 <div style={{ position: "absolute", left: "14%", top: "30%", zIndex: 10 }}>
                     <h1 style={{
                         fontFamily: 'Jost, sans-serif',

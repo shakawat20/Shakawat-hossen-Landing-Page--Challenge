@@ -47,7 +47,7 @@ const Products = ({ handleBadge }) => {
     ];
 
     return (
-        <div id='products'>
+        <div id='products' style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
             <h1 style={{
                 styleName: "Heading",
                 fontWeight: 700,
@@ -72,7 +72,7 @@ const Products = ({ handleBadge }) => {
             }}>
                 Experience crystal clear vision and elevated style <br />with our premium collection of eyeglasses.
             </p>
-            <div className='grid justify-center gap-2 items-center lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 '>
+            <div className='grid  gap-2 items-center lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 '>
                 {
                     productsInfo.map(product => <div className="card card-compact w-96 bg-base-100 shadow-xl">
                         <figure><img style={{ width: "100%", backgroundColor: "#F7F7F7" }} src={product.img} alt="Shoes" /></figure>
