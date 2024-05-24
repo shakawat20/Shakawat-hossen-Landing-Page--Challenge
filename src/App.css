@@ -1,13 +1,8 @@
-/* @media only screen and (max-width: 1024px) {
-  .responsive {
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
-
-  
-  }
-  .responsive div img{
-    width: 100%;
-  }
+/* @media screen and (max-width:1094px) {
+    #reviews {
+        flex-direction: column;
+        width: 800px;
+        height: auto;
+        color: red;
+    }
 } */

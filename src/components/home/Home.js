@@ -56,7 +56,7 @@ const Home = () => {
 
             </div>
             <div  style={{ width: "100%" }}>
-                <div id='features' style={{ position: "relative", top: "-90px", display: "flex", justifyContent: "space-between", width: "100%" }}>
+                <div id='features' style={{ position: "relative", top: "-90px", display: "flex", justifyContent: "space-around", width: "100%" }}>
                     {
                         object1.map(object =>
                             <div className='flex flex-col justify-center items-center' style={{ width: "170px", height: "236px" }}>
